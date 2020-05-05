@@ -1,4 +1,7 @@
-# template_hmtl
+# Template_hmtl
+
+https://JoseGarciaMoreno.github.io/template_hmtl/index.html
+
 
 Template html 5
 
@@ -29,3 +32,10 @@ aj@lkn.io | @ajlkn
 https://html5up.net/
 
 https://html5up.net/solid-state
+
+-----------------------------------------
+Collaborators and partners:
+
+Cyclo π Studio in Github https://cyclopistudio.github.io/
+
+greenfactory.es http://greenfactory.es/
