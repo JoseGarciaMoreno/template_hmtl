@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Ecuación</title>
+<style>
+body {
+text-align: center;
+margin-top: 0.5cm;
+}
+.input-group {
+margin-bottom: 1em;
+}
+.input-group input {
+width: 300px; /* Doble del tamaño estándar */
+}
+.input-group label {
+display: inline-block;
+width: 300px;
+}
+</style>
+<script>
+function calcular() {
+var L = document.getElementById('L').value || 20;
+var p = document.getElementById('p').value || 180;
+var c = document.getElementById('c').value || 5;
+
+var M = (L * (p - 20)) / c;
+
+document.getElementById('valores').innerText = 'Valores de cálculo: capacidad ' + L + ' litros , presión = ' + p + ' bar, caudal = ' + c + ' litros*min';
+document.getElementById('resultado').innerText = 'Tiempo restante: ' + M.toFixed(2) + ' minutos';
+}
+</script>
+</head>
+<body>
+
+<!-- Espacio para el logotipo -->
+<div id="logo">
+<img src="https://fp.amusal.es/moodle/pluginfile.php/1/theme_mb2nl/logo/1692794283/Logotipo-ISFP-Amusal-Transparente.png" alt="Logotipo">
+</div>
+
+<h2>Calculadora de tiempo del servicio de oxígeno</h2>
+
+<div class="input-group">
+<label for="L">Valor de la capacidad de la botella en litros:</label>
+<input type="number" id="L" placeholder="Introduce la capacidad de la botella (litros)"> <span>Litros</span>
+</div>
+
+<div class="input-group">
+<label for="p">Valor de la presión de la botella en bar:</label>
+<input type="number" id="p" placeholder="Introduce la presión de la botella (bar)"> <span>Bar</span>
+</div>
+
+<div class="input-group">
+<label for="c">Valor del servicio (caudal) en litros por minuto:</label>
+<input type="number" id="c" placeholder="Introduce el caudal de oxígeno (litros por minuto)"><span>Litros por minuto</span>
+</div>
+
+<button onclick="calcular()">Calcular</button>
+
+<p id="valores"></p>
+<p id="resultado"></p>
+
+</body>
+</html>
