@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Ajustable - Chatarra Estudio</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Evita el scroll si no es necesario */
+            background-color: #000; /* Fondo negro por si la imagen no cubre todo */
+        }
+
+        .contenedor-imagen {
+            width: 100vw;  /* 100% del ancho de la ventana */
+            height: 100vh; /* 100% del alto de la ventana */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Mantiene la proporción sin recortar */
+        }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor-imagen"> <img src="https://raw.githubusercontent.com/JoseGarciaMoreno/Chatarra-Estudio/refs/heads/main/imagen/cuadro-mamdos.jpg"
+
+        alt="Cuadro Mamdos"> </div>
+    
+  </body>
+</html>
